@@ -127,6 +127,15 @@ public class GameMap {
                     System.out.println("You have quit the game, thanks for playing!");
                     System.exit(0);
                     break;
+                case "help":
+                case "Help":
+                    getHelp();
+                    break;
+
+                case "look":
+                case "Look":
+                    getLook();
+                    break;
             }
         return msg;
     }
@@ -143,6 +152,20 @@ public class GameMap {
 
        System.out.println(s);
    }
+   public void getLook(){
+        String s;
+       Room r = getPlayer().getRoom();
+       s = "You are in " + r.getName() + ". " + r.getDescription();
+       System.out.println(s);
+   }
+   public void getHelp(){
+        String s;
+        s = "Enter the direction in which you want to go. e.g. North, South, East, West. You can also you 'go' north, south, east, west.\n" +
+                "Aswell as entering just the letter e.g. n, s, e, w\n" + "You can also enter look to get the describtion of the room you're in again\n" +
+                "and you can always enter 'Exit' to stop the game";
+       System.out.println(s);
+   }
+
    public String RunCommand(String inputstr){
         String s = "You have quit the game thanks for playing";
         String lowstr = inputstr.trim().toLowerCase();
