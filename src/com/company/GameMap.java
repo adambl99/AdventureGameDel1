@@ -14,15 +14,24 @@ public class GameMap {
         //Rum numrene er lavet med udgangspunkt i tal værdierne givet i vores opgaveformulering på fronter
 
                                                //N           //S       //W        //E
-        map.add(new Room("Room 1", "This is just an empty room, with an empty grave", Direction.NOEXIT, 1, Direction.NOEXIT, 8));
-        map.add(new Room("Room 4", "Be careful here, as this is the room where the pharaoh's butcher is buried", 1, 2, Direction.NOEXIT, Direction.NOEXIT));
-        map.add(new Room("Room 7", "This room is just full of spiders and spiderweb get out before you are stuck", 1, Direction.NOEXIT, Direction.NOEXIT, 3));
-        map.add(new Room("Room 8", "Be careful here, one wrong step and you will fall down to the snakes underneath you", 4, Direction.NOEXIT, 2, 5));
-        map.add(new Room("Room 5", "Congratulations, you have finally found the pharaohs grave, time to reap it's treasures", Direction.NOEXIT, 3, Direction.NOEXIT, Direction.NOEXIT));
-        map.add(new Room("Room 9", "In this room you find a door to your left. You can't see anything else, but maybe there is some other way out of this room", 6, Direction.NOEXIT, 3, Direction.NOEXIT));
-        map.add(new Room("Room 6", "The room you entered here seems like you're on the right path. There is a lot of reliefs on the walls....", 7, 5, Direction.NOEXIT, Direction.NOEXIT));
-        map.add(new Room("Room 3", "This room seems like a hole new burial ground for all the slaves. You gotta get out fast, as the smell is horrible!", Direction.NOEXIT, 6, 8, Direction.NOEXIT));
-        map.add(new Room("Room 2", "You see a lot of statues of Anubis, The protector of tombs, in this room. Maybe this is a sign that you are near the pharaohs grave, where the big treasure is!", Direction.NOEXIT, Direction.NOEXIT, 0, 7));
+        map.add(new Room("Room 1", "This is just an empty room, with an empty grave",
+                Direction.NOEXIT, 1, Direction.NOEXIT, 8));
+        map.add(new Room("Room 4", "Be careful here, as this is the room where the pharaoh's butcher is buried",
+                1, 2, Direction.NOEXIT, Direction.NOEXIT));
+        map.add(new Room("Room 7", "This room is just full of spiders and spiderweb get out before you are stuck",
+                1, Direction.NOEXIT, Direction.NOEXIT, 3));
+        map.add(new Room("Room 8", "Be careful here, one wrong step and you will fall down to the snakes underneath you",
+                4, Direction.NOEXIT, 2, 5));
+        map.add(new Room("Room 5", "Congratulations, you have finally found the pharaohs grave, time to reap it's treasures",
+                Direction.NOEXIT, 3, Direction.NOEXIT, Direction.NOEXIT));
+        map.add(new Room("Room 9", "In this room you find a door to your left. " +
+                "You can't see anything else, but maybe there is some other way out of this room", 6, Direction.NOEXIT, 3, Direction.NOEXIT));
+        map.add(new Room("Room 6", "The room you entered here seems like you're on the right path." +
+                " There is a lot of reliefs on the walls....", 7, 5, Direction.NOEXIT, Direction.NOEXIT));
+        map.add(new Room("Room 3", "This room seems like a hole new burial ground for all the slaves. " +
+                "You gotta get out fast, as the smell is horrible!", Direction.NOEXIT, 6, 8, Direction.NOEXIT));
+        map.add(new Room("Room 2", "You see a lot of statues of Anubis, The protector of tombs, in this room." +
+                " Maybe this is a sign that you are near the pharaohs grave, where the big treasure is!", Direction.NOEXIT, Direction.NOEXIT, 0, 7));
 
         player = new Actor("player1","spiller1", map.get(0));
     }
